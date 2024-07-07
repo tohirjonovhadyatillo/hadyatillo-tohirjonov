@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Rubik';
+    background-color:rgb(11, 150, 11) ;
 }
 
 .container{
@@ -27,82 +28,59 @@ body{
 .main img{
     background-size: cover;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px #fff;
 }
 
 .main h1{
     font-weight: 700;
     font-size: 24px;
-    color: black;
+    color: #fff;
 }
 
-.telegram{
+.fa-brands{
+    color:#fff;
+}
+
+.item{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
     margin-bottom: 20px;
-    background-color: rgb(11, 150, 11);
+    background-color: transparent;
     border-radius: 10px;
     padding: 23px;
     transition: all 0.5s linear;
+    width: 250px;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: 2px 3px 4px #fff;
 }
 
-.telegram a{
+.item a{
     color: #fff;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
 }
 
-.telegram:hover{
-    background-color: rgb(8, 119, 8);
+.item:hover{
+    z-index: 1000;
+    transform: scale(1.1);
+    
 }
-
-
-.instagram{
+.bottom{
+    background-color:rgb(3, 109, 3);
+    padding: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 25px;
-    margin-bottom: 20px;
-    background-color: rgb(11, 150, 11);
-    border-radius: 10px;
-    padding: 23px;
-    transition: all 0.5s linear;
-}
-
-.instagram a{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.instagram:hover{
-    background-color: rgb(8, 119, 8);
-}
-
-.youtube{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 70px;
-    background-color: rgb(11, 150, 11);
-    border-radius: 10px;
-    padding: 23px;
-    transition: all 0.5s linear;
 }
 
-.youtube a{
-    color: #fff;
-    font-size: 18px;
+.bottom h2{
     font-weight: 400;
-    text-decoration: none;
-}
-
-.youtube:hover{
-    background-color: rgb(8, 119, 8);
+    color:#fff ;
+    
 }
 
 /* Loader */
@@ -114,18 +92,4 @@ body{
     width: 100%;
     position: fixed;
     z-index: 100;
-}
-
-.bottom{
-    background-color: rgb(8, 119, 8);
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottom h2{
-    font-weight: 400;
-    color: #fff;
-    
 }
