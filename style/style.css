@@ -18,11 +18,12 @@ body{
 
 
 .main{
+    padding: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .main img{
@@ -37,14 +38,18 @@ body{
     color: #fff;
 }
 
-.fa-brands{
-    color:#fff;
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .item{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     gap: 25px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -57,20 +62,15 @@ body{
     box-shadow: 2px 3px 4px #fff;
 }
 
-.item a{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
 .item:hover{
+    color: rgb(11, 150, 11);
+    font-weight: 700;
+    background-color: #fff;
     z-index: 1000;
     transform: scale(1.1);
     
 }
 .bottom{
-    background-color:rgb(3, 109, 3);
     padding: 100px;
     display: flex;
     justify-content: center;
@@ -92,4 +92,44 @@ body{
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+/* media screen */
+
+@media screen and (max-width : 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    .main img{
+        width: 80px; height: 8-px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .container{
+        max-width: 720px;
+    }
+
+
+
+}
+
+@media screen and (max-width : 576px) {
+    .container{
+        max-width: 85%;
+    }
+
+    main img {
+        width: 60px;
+        height: 60px;
+    }
+
 }
